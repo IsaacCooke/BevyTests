@@ -11,9 +11,9 @@ use crate::reactive_inputs::ReactiveInputsPlugin;
 
 fn main() {
     App::new()
-        .add_plugins((DefaultPlugins, HelloPlugin, InputsPlugin, ReactiveInputsPlugin))
-        .add_systems(Startup, setup)
-        .add_systems(Update, square_color)
+        .add_plugins((DefaultPlugins, InputsPlugin, ReactiveInputsPlugin))
+        // .add_systems(Startup, setup)
+        // .add_systems(Update, square_color)
         .run();
 }
 
